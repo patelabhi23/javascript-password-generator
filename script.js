@@ -51,4 +51,9 @@ function copyPassword() {
         document.execCommand("Copy");
         alert("Password copied to clipboard!");
     }
+
+    else
+    {
+        alert("Please Generate Password First !");
+    }
 };
