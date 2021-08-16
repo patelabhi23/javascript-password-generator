@@ -42,3 +42,13 @@ function generatePassword() {
 
     document.getElementById("password").innerHTML = resultPass;
 };
+
+function copyPassword() {
+    document.querySelector("textarea").select();
+    password = $("#password").html();
+
+    if (password !== "") {
+        document.execCommand("Copy");
+        alert("Password copied to clipboard!");
+    }
+};
